@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro</title>
+  <title>CONUSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Style/Index.css">
+  <link rel="stylesheet" href="../Style/noticias.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Cinzel|Cinzel+Decorative' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../jquery/JQuery.js"></script>
+  <script src="../Script/cookie.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../Style/Login.css">
+  <link rel="stylesheet" type="text/css" href="../Style/Registro.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="Login.css">
+  <style>
+	footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+<br> <br>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/20172D105/conuss/index.html">CONUSS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/20172D105/conuss/index.html">Home</a></li>
+         <li class="dropdown"><a class="dropdown-toggle" href="/20172D105/conuss/sub_pages/Servicios.html">Servicios <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li><a href="/20172D105/conuss/sub_pages/Servicios.html#Hosting">Hosting</a></li>
+              <li><a href="/20172D105/conuss/sub_pages/Servicios.html#Alamcenamiento">Almacenamiento</a></li>
+              <li><a href="/20172D105/conuss/sub_pages/Servicios.html#Computo">Cómputo</a></li>
+              <li><a href="/20172D105/conuss/sub_pages/Servicios.html#Procesamiento">Procesamiento</a></li>
+            </ul>
+        </li>
+        <li><a href="/20172D105/conuss/sub_pages/Quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="/20172D105/conuss/sub_pages/Noticias.html">Noticias</a></li>
+        <li><a href="/20172D105/conuss/sub_pages/FAQ.html">Preguntas frecuentes</a></li>
+        <li><a href="/20172D105/conuss/sub_pages/Contactanos.html">Contáctanos</a></li>
+        <li><a href="https://uis.edu.co" target="blank" class="UIS">UIS</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="#" data-toggle="modal" data-target="#login-modal"><span  class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#register-modal"><span class="glyphicon glyphicon-check"></span> Create account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="Top"></div>
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;" >
+  <div class="modal-dialog">
+    <div class="loginmodal-container">
+        <h1>Ingrese a su cuenta</h1><br>
+          <input type="text" name="user" id="username" onFocusout="verifyC(value)" placeholder="Username">
+          <input type="password" name="pass" id="password" placeholder="Password">
+          <input onclick="alertC()" type="submit" name="login" value="Login" id="enviar" class="login loginmodal-submit">
+          
+        <div class="login-help">
+          <a href="/20172D105/conuss/sub_pages/Registro.html">Register</a> - <a href="#">Forgot Password</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!--<form action="registrar.php" method="post" class="form-register">
+  <h2 class="form__titulo"> CREA UNA CUENTA </h2>
+  <div class="contenedor-inputs">
+    <input type="text" name="nombre" placeholder="Nombre" class="input-48" required> 
+    <input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required> 
+    <input type="email" name="correo" placeholder="correo" class="input-48" required> 
+    <input type="text" name="usuario" placeholder="usuario" class="input-48" required> 
+    <input type="password" name="clave" placeholder="contraseña" class="input-48" required> 
+    <input type="text" name="telefono" placeholder="Telefono" class="input-48" required> 
+    <input type="submit" value="Registrar"  class="btn-enviar" required> 
+
+  </div> -->
+  
+</form>
+<form class="form-horizontal"  action="">
+  <div class="form-group">
+
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-3">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <label class="control-label col-sm-1" for="date">Fecha de nacimiento:</label>
+    <div class="col-sm-2">
+      <input type="date" class="form-control" id="date" required>
+    </div>
+   
+
+  </div>
+
+  <div class="form-group">
+    
+    <label class="control-label col-sm-2" for="user">Usuario</label>
+    <div class="col-sm-2">
+      <input type="textbox" class="form-control" id="user">
+    </div>
+
+    <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+    <div class="col-sm-2"> 
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox">Recordarme</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-4">
+      <button type="submit" class="btn btn-lg btn-primary btn-block" id="Enviar">Enviar</button>
+    </div>
+  </div>
+</form>
+
+<br><br>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>

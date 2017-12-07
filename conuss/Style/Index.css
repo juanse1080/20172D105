@@ -1,0 +1,102 @@
+    body{background-color: #DADADA}
+
+    .carousel-inner img { width: 100%; height: auto;}
+    
+    #carousel {
+    width: 100%; 
+    right: 0;
+    left: 0; 
+    padding: 0;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .navbar-brand{font-family: "Josefin Sans";}
+
+    .navbar-collapse{font-family:"Segoe UI",Arial,sans-serif; text-transform: uppercase;}
+
+    .dropdown-menu li > a:hover{
+        background-color: rgba(97, 185, 244, 0.5);
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    .nonav{margin-top:50px;}
+
+    h1{
+      margin-top: 3.5%;
+      font-family: "Cinzel";
+    }
+
+     p{font-family: "Open Sans"; color: black;}
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    .c1{background-color: white; color: black;}
+
+    .iframe{width: 424px; margin-left: auto; margin-right: auto;}
+    iframe{border: 0;}
+
+    .panel{border: none;}
+    .panel-heading{padding-bottom: 0; font-family: "Poiret One";}
+    .panel-heading span{color:#8A2BE2;}
+    .panel-body{padding-top: 0;border: none;}
+    .panel-collapse .collapse.in{border: none;}
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }    
+
+    footer> a{
+      font-family: "Segoe UI";
+      font-style: thin;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+
+    footer> a:hover{
+      text-decoration: none;
+      color: #61B9F4;
+    }
+
+    .fa{letter-spacing: 5px;}
+ 
+    .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    }
+
+    .fa-facebook .fa-twitter .fa-google .fa-linkedin .fa-youtube {color: white;}
+
+
+::-webkit-scrollbar {
+    height:14px; width:8px;
+    background: #ededed;}
+::-webkit-scrollbar-thumb {
+    background: #8A2BE2;
+    border:0px solid #ededed;
+    border-radius: 2px;
+}
