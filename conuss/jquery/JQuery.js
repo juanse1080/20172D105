@@ -1,11 +1,11 @@
 
 //Services' Dropdown Menu
 
-$(function(){
-  $(".dropdown").hover(
+/*$(function(){
+  $(".dropdown").click(
     function(){
     $(".dropdown-menu").toggle("slow");
-  });
+  });*/
 
   $(".UIS").click(
     function(){
