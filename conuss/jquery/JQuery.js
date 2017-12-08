@@ -1,17 +1,17 @@
 
-//Jquery
+//Services' Dropdown Menu
 
 $(function(){
-  $(".dropdown").hover(
+  /*
+  $(".dropdown").click(
     function(){
     $(".dropdown-menu").toggle("slow");
-  });
+  });*/
 
   $(".UIS").click(
     function(){
     window.alert('Será redirigido al sitio web de la UIS');
   });
-
 
 //Cookies
 
@@ -63,7 +63,7 @@ var message;
 
 message="Bienvenido.";
 	
-	document.getElementById("contador").innerHTML = ("visitas:"+visit);
+	document.getElementById("contador").innerHTML = ("Visitas:"+visit);
 }
 
 function ResetCounts() {

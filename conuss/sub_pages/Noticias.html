@@ -17,13 +17,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="../jquery/JQuery.js"></script>
   <script src="../Script/cookie.js"></script>
+  <script src="../Script/Sidebar.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../Style/Login.css">
   <link rel="stylesheet" type="text/css" href="../Style/Registro.css">
 
 </head>
 <body>
-
+<!--Navigation-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -36,8 +37,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="/20172D105/conuss/index.html">Home</a></li>
-         <li class="dropdown"><a class="dropdown-toggle" href="./Servicios.html">Servicios <span class="caret"></span></a>
+        <li><a href="../index.html">Home</a></li>
+         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Servicios <span class="caret"></span></a>
             <ul class="dropdown-menu" id="dropdown-menu">
               <li><a href="./Servicios.html#Hosting">Hosting</a></li>
               <li><a href="./Servicios.html#Alamcenamiento">Almacenamiento</a></li>
@@ -47,7 +48,7 @@
         </li>
         <li><a href="./Quienes-somos.html">Quiénes somos</a></li>
         <li class="active"><a href="./Noticias.html">Noticias</a></li>
-        <li><a href="./FAQ.html">Preguntas frecuentes</a></li>
+        <li><a href="#" onclick="openNav()">Investigación</a></li>
         <li><a href="./Contactanos.html">Contáctanos</a></li>
         <li><a href="https://uis.edu.co" target="blank" class="UIS">UIS</a></li>
       </ul>
@@ -59,6 +60,17 @@
     </div>
   </div>
 </nav>
+
+<!--SideNav-->
+<div id="mySidenav" class="sidenav">
+  <div class="nonav"></div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./Investigación.html">Líneas de Investigación</a>
+  <a href="./Investigaciones.html">Investigaciones</a>
+  <a href="./Actividades.html">Impacto de Actividades</a>
+  <a href="./Recursos.html">Recursos</a>
+</div>
+
 <div id="Top"></div>
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;" >
   <div class="modal-dialog">
@@ -87,7 +99,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta explicabo ab amet expedita beatae laboriosam consequatur sunt debitis suscipit rem eligendi eos voluptatibus culpa officia nemo, modi ut minima!.</p>
       </div>
       <div class="col-sm-4 notiimg">
-        <img src="./Images/web-program.png">
+        <img src="../Images/web-program.png">
       </div>
     </div>
 
@@ -99,7 +111,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis odit blanditiis quod ipsam consectetur nobis placeat magnam, ipsa veniam aliquam! Excepturi, illo amet earum ipsam corporis doloremque labore recusandae adipisci..</p>
       </div>
       <div class="col-sm-4 notiimg">
-        <img src="./Images/sqlogo.jpg">
+        <img src="../Images/sqlogo.jpg">
       </div>
     </div>
   </div>

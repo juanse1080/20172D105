@@ -9,6 +9,9 @@
     padding: 0;
     }
 
+    #contador{margin:0 auto;font-size: 2em;font-family: "Cinzel"; margin-top: 30%;}
+    .visitas{text-align:center;}
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -27,11 +30,7 @@
     .row.content {height: 450px}
     
     /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
+    
     
     .nonav{margin-top:50px;}
 
@@ -51,7 +50,13 @@
       .row.content {height:auto;} 
     }
 
-    .c1{background-color: white; color: black;}
+    .c1{
+      background-color: white;
+      color: black;
+      padding:40px;
+    }
+
+    .page-title {font-size: 300%;}
 
     .iframe{width: 424px; margin-left: auto; margin-right: auto;}
     iframe{border: 0;}
@@ -61,6 +66,35 @@
     .panel-heading span{color:#8A2BE2;}
     .panel-body{padding-top: 0;border: none;}
     .panel-collapse .collapse.in{border: none;}
+
+    /*Lista de Generalidades*/
+    .generalidades{
+      list-style: none; /* Remove list bullets */
+      padding: 0;
+      padding-top: 3%;
+      margin: 0;
+    }
+    .generalidades b{
+      font-size: 1.5em;
+      letter-spacing: -1px;
+      color: #676568;
+    }
+
+    .generalidades li {
+      padding-left: 16px;
+      font-size: 1.2em;
+    }
+
+    .generalidades>li:before {
+      content: "✔"; /
+      padding-right: 8px;
+      color: blue;
+    }
+
+    /*Párrafos en Index, dentro de ul class="generalidades"*/
+    .generalidades p{font-size: 1.2em;}
+
+    figure{margin: 0 auto; text-align: center;}
 
     /* Set black background color, white text and some padding */
     footer {
@@ -96,7 +130,58 @@
     height:14px; width:8px;
     background: #ededed;}
 ::-webkit-scrollbar-thumb {
-    background: #8A2BE2;
+    background: #676568;
     border:0px solid #ededed;
     border-radius: 2px;
+}
+
+/*SideBar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    padding: 12px 8px 12px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px; width: 0; left:0;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Layout - SP
+===============CHANGES============= */
+
+@media screen and (max-width: 767px){
+
+  .sidenav{width: 0; left: 0;}
+
+  
 }
