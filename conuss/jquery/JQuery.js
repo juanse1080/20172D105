@@ -1,5 +1,5 @@
 
-//Jquery
+//Services' Dropdown Menu
 
 $(function(){
   $(".dropdown").hover(
@@ -11,7 +11,6 @@ $(function(){
     function(){
     window.alert('Será redirigido al sitio web de la UIS');
   });
-
 
 //Cookies
 

@@ -17,6 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="../jquery/JQuery.js"></script>
   <script src="../Script/cookie.js"></script>
+  <script src="../Script/Sidebar.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../Style/Login.css">
   <link rel="stylesheet" type="text/css" href="../Style/Registro.css">
@@ -24,6 +25,7 @@
 </head>
 <body>
 
+<!--Navigation-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -47,7 +49,7 @@
         </li>
         <li><a href="./Quienes-somos.html">Quiénes somos</a></li>
         <li><a href="./Noticias.html">Noticias</a></li>
-        <li><a href="./FAQ.html">Preguntas frecuentes</a></li>
+        <li><a href="#" onclick="openNav()">Investigación</a></li>
         <li class="active"><a href="./Contactanos.html">Contáctanos</a></li>
         <li><a href="https://uis.edu.co" target="blank" class="UIS">UIS</a></li>
       </ul>
@@ -59,6 +61,17 @@
     </div>
   </div>
 </nav>
+
+<!--SideNav-->
+<div id="mySidenav" class="sidenav">
+  <div class="nonav"></div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./Investigación.html">Líneas de Investigación</a>
+  <a href="./Investigaciones.html">Investigaciones</a>
+  <a href="./Actividades.html">Impacto de Actividades</a>
+  <a href="./Recursos.html">Recursos</a>
+</div>
+
 <div id="Top"></div>
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;" >
   <div class="modal-dialog">

@@ -18,6 +18,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="./jquery/JQuery.js"></script>
   <script src="./Script/cookie.js"></script>
+  <script src="./Script/Sidebar.js"></script>
 
   <link rel="stylesheet" type="text/css" href="./Style/Login.css">
   <link rel="stylesheet" type="text/css" href="./Style/Registro.css">
@@ -54,7 +55,7 @@
         </li>
         <li><a href="./sub_pages/Quienes-somos.html">Quiénes somos</a></li>
         <li><a href="./sub_pages/Noticias.html">Noticias</a></li>
-        <li><a href="./sub_pages/FAQ.html">Preguntas frecuentes</a></li>
+        <li><a href="#" onclick="openNav()">Investigación</a></li>
         <li><a href="./sub_pages/Contactanos.html">Contáctanos</a></li>
         <li><a href="https://uis.edu.co" target="blank" class="UIS">UIS</a></li>
       </ul>
@@ -66,6 +67,16 @@
     </div>
   </div>
 </nav>
+
+<!--SideNav-->
+<div id="mySidenav" class="sidenav">
+  <div class="nonav"></div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./sub_pages/Investigación.html">Líneas de Investigación</a>
+  <a href="./sub_pages/Investigaciones.html">Investigaciones</a>
+  <a href="./sub_pages/Actividades.html">Impacto de Actividades</a>
+  <a href="./sub_pages/Recursos.html">Recursos</a>
+</div>
 
 <div id="Top"></div>
 
