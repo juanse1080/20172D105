@@ -1,0 +1,20 @@
+    /*Lista de Generalidades*/
+    .list{
+      list-style: none; /* Remove list bullets */
+      padding: 0;
+      padding-top: 3%;
+      margin: 0;
+    }
+    .list b{
+      font-family: 'Lato';
+      font-size: 1.7em;
+      letter-spacing: -1px;
+      color: #687b99;
+      list-style: none;
+    }
+    .list ul{
+    	font-size: 1.05em;
+    }
+
+    /*Párrafos en Index, dentro de ul class="generalidades"*/
+    .generalidades p{font-size: 1.2em;}

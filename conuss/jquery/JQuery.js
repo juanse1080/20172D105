@@ -1,7 +1,8 @@
 
 //Services' Dropdown Menu
 
-/*$(function(){
+$(function(){
+  /*
   $(".dropdown").click(
     function(){
     $(".dropdown-menu").toggle("slow");
@@ -62,7 +63,7 @@ var message;
 
 message="Bienvenido.";
 	
-	document.getElementById("contador").innerHTML = ("visitas:"+visit);
+	document.getElementById("contador").innerHTML = ("Visitas:"+visit);
 }
 
 function ResetCounts() {

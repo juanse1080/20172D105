@@ -9,6 +9,9 @@
     padding: 0;
     }
 
+    #contador{margin:0 auto;font-size: 2em;font-family: "Cinzel"; margin-top: 30%;}
+    .visitas{text-align:center;}
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -90,6 +93,8 @@
 
     /*Párrafos en Index, dentro de ul class="generalidades"*/
     .generalidades p{font-size: 1.2em;}
+
+    figure{margin: 0 auto; text-align: center;}
 
     /* Set black background color, white text and some padding */
     footer {
