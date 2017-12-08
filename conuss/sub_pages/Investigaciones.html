@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--STYLE-->
   <link rel="stylesheet" href="../Style/Index.css">
   <link rel="stylesheet" href="../Style/noticias.css">
+  <link rel="stylesheet" href="../Style/Tabs.css">
+  <!--FONTS-->
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Cinzel|Cinzel+Decorative' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--SCRYPTS-->
   <script src="../jquery/JQuery.js"></script>
   <script src="../Script/cookie.js"></script>
   <script src="../Script/Sidebar.js"></script>
@@ -88,15 +93,20 @@
 </div>  
 
 <div class="container-fluid">
+  <div class="row">
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
-  <div class="col-sm-2"></div>
-  <!--Content column-->
-  <div class="col-sm-8" id="center">
-    <!--Actual content-->
-    <!--End of ctual content-->
+    <div id="Invs" class="tabcontent">
+      <h3>Investigaciones</h3>
+    </div>
+
+    <div id="Artic" class="tabcontent">
+      <h3>Artículos</h3>
+    </div>
   </div>
-  <div class="col-sm-2"></div>
-
 </div>
 
 
