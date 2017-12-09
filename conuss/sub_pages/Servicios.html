@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--STYLE-->
   <link rel="stylesheet" href="../Style/Index.css">
   <link rel="stylesheet" href="../Style/noticias.css">
+  <!--FONTS-->
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Cinzel|Cinzel+Decorative' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--SCRYPT-->
   <script src="../jquery/JQuery.js"></script>
   <script src="../Script/cookie.js"></script>
   <script src="../Script/Sidebar.js"></script>
@@ -92,36 +96,65 @@
 <div class="container-fluid text-justify">
 
   <div class="col-sm-2 nonav"></div>
-  <div class="col-sm-8" id="center">
+  <!--Content Column-->
+  <div class="col-sm-8 c1" id="center">
+    <!--Actual Content-->
+    <div class="row nonav"></div>
+    <h1 id="Hosting">Servicios</h1> <!--El título tiene el id hosting porque si se coloca más abajo, no se ve bien al ir a #Hosting. La nav lo tapa.-->
 
-    <div class="row entry text-justify" id="Hosting">
-      <div class="col-sm-12">
-        <h2>Hosting</h2>
+    <div>
+      <div class="panel-heading"> 
+        <h2 data-toggle="collapse" href="#Host">Hosting <span class="caret"></span></h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi beatae voluptatem tempore soluta necessitatibus quod aperiam. Saepe dicta aspernatur eligendi at quam, tempora? Harum esse nam eligendi sequi officia, assumenda?</p>
+      </div>
+      <div id="Host" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
-    <div class="row entry text-justify" id="Alamcenamiento">
-      <div class="col-sm-12">
-        <h2>Almacenamiento</h2>
+
+    <div>
+      <div class="panel-heading" id="Almacenamiento">
+        <h2 data-toggle="collapse" href="#Almac">Almacenamiento <span class="caret"></span></h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi beatae voluptatem tempore soluta necessitatibus quod aperiam. Saepe dicta aspernatur eligendi at quam, tempora? Harum esse nam eligendi sequi officia, assumenda?</p>
+      </div>
+      <div id="Almac" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
-    <div class="row entry text-justify" id="Computo">
-      <div class="col-sm-12">
-        <h2>Cómputo</h2>
+
+    <div>
+      <div class="panel-heading" id="Computo">
+        <h2 data-toggle="collapse" href="#Comp">Cómputo <span class="caret"></span></h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi beatae voluptatem tempore soluta necessitatibus quod aperiam. Saepe dicta aspernatur eligendi at quam, tempora? Harum esse nam eligendi sequi officia, assumenda?</p>
+      </div>
+      <div id="Comp" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
-    <div class="row entry text-justify" id="Procesamiento">
-      <div class="col-sm-12">
-        <h2>Procesamiento</h2>
+
+    <div>
+      <div class="panel-heading" id="Procesamiento">
+        <h2 data-toggle="collapse" href="#Proc">Procesamiento <span class="caret"></span></h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi beatae voluptatem tempore soluta necessitatibus quod aperiam. Saepe dicta aspernatur eligendi at quam, tempora? Harum esse nam eligendi sequi officia, assumenda?</p>
+      </div>
+      <div id="Proc" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
+
+    <!--To fill up sopace-->
+    <div class="row nonav"></div>
+    <div class="row nonav"></div>
+    <div class="row nonav"></div>
+  <!--End of Actual Content-->
   </div>
   <div class="col-sm-2 nonav"></div>
 </div>
