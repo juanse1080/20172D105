@@ -1,4 +1,4 @@
-    body{background-color: #DADADA}
+    body{background-color: #DADADA; font-family: 'Open Sans';}
 
     .carousel-inner img { width: 100%; height: auto;}
     
@@ -78,13 +78,14 @@
       margin: 0;
     }
     .generalidades b{
+      color: blue;
       letter-spacing: -1px;
-      color: #676568;
+      color: #687b99;
       font-size: 140%;
     }
 
     .generalidades li {
-      padding-left: 16px;
+      padding-left: 17px;
     }
 
     .generalidades>li:before {
@@ -92,7 +93,8 @@
       padding-right: 8px;
       color: blue;
     }
-
+    
+    ol a:hover{color:rgba(166, 77, 255, 0.6); text-decoration: none;}
 
     figure{margin: 0 auto; text-align: center;}
 
